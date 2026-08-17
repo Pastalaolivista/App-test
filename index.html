@@ -4,89 +4,46 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Simple Style</title>
-<meta name="description" content="Outfit ideas by style, with every piece listed and linked." />
-
-<!-- Installable web app -->
 <meta name="theme-color" content="#06070C" />
+<meta name="color-scheme" content="dark" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Simple Style" />
-<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Simple%20Style%22%2C%22short_name%22%3A%22Simple%20Style%22%2C%22description%22%3A%22Outfit%20ideas%20by%20style%2C%20with%20every%20piece%20listed%20and%20linked.%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%2306070C%22%2C%22theme_color%22%3A%22%2306070C%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%2F%2Fwww.w3.org%2F2000%2Fsvg%2522%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520viewBox%253D%25220%25200%2520512%2520512%2522%253E%250A%253Crect%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520rx%253D%2522112%2522%2520fill%253D%2522%252306070C%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522128%2522%2520cy%253D%252296%2522%2520r%253D%2522150%2522%2520fill%253D%2522%25232B68DE%2522%2520opacity%253D%25220.28%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522410%2522%2520cy%253D%2522150%2522%2520r%253D%2522130%2522%2520fill%253D%2522%2523C7303F%2522%2520opacity%253D%25220.22%2522%2F%253E%250A%253Crect%2520x%253D%2522104%2522%2520y%253D%2522104%2522%2520width%253D%2522304%2522%2520height%253D%2522304%2522%2520rx%253D%252284%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522rgba%2528226%252C73%252C90%252C0.45%2529%2522%2520stroke-width%253D%252214%2522%2F%253E%250A%253Cpath%2520d%253D%2522M312%2520196c-19-22-53-28-78-15-24%252013-30%252041-12%252059%252013%252013%252035%252016%252057%252019%252022%25203%252044%25206%252057%252019%252018%252018%252012%252046-12%252059-25%252013-59%25207-78-15%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522%2523E2495A%2522%2520stroke-width%253D%252226%2522%2520stroke-linecap%253D%2522round%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522256%2522%2520cy%253D%2522126%2522%2520r%253D%252217%2522%2520fill%253D%2522%2523E2495A%2522%2F%253E%250A%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D" />
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Simple%20Style%22%2C%22short_name%22%3A%22Simple%20Style%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%2306070C%22%2C%22theme_color%22%3A%22%2306070C%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%2F%2Fwww.w3.org%2F2000%2Fsvg%2522%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520viewBox%253D%25220%25200%2520512%2520512%2522%253E%250A%253Crect%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520rx%253D%2522112%2522%2520fill%253D%2522%252306070C%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522128%2522%2520cy%253D%252296%2522%2520r%253D%2522150%2522%2520fill%253D%2522%25232B68DE%2522%2520opacity%253D%25220.28%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522410%2522%2520cy%253D%2522150%2522%2520r%253D%2522130%2522%2520fill%253D%2522%2523C7303F%2522%2520opacity%253D%25220.22%2522%2F%253E%250A%253Crect%2520x%253D%2522104%2522%2520y%253D%2522104%2522%2520width%253D%2522304%2522%2520height%253D%2522304%2522%2520rx%253D%252284%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522rgba%2528226%252C73%252C90%252C0.45%2529%2522%2520stroke-width%253D%252214%2522%2F%253E%250A%253Cpath%2520d%253D%2522M312%2520196c-19-22-53-28-78-15-24%252013-30%252041-12%252059%252013%252013%252035%252016%252057%252019%252022%25203%252044%25206%252057%252019%252018%252018%252012%252046-12%252059-25%252013-59%25207-78-15%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522%2523E2495A%2522%2520stroke-width%253D%252226%2522%2520stroke-linecap%253D%2522round%2522%2F%253E%250A%253Ccircle%2520cx%253D%2522256%2522%2520cy%253D%2522126%2522%2520r%253D%252217%2522%2520fill%253D%2522%2523E2495A%2522%2F%253E%250A%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D" />
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22%2306070C%22/%3E%0A%3Ccircle%20cx%3D%22128%22%20cy%3D%2296%22%20r%3D%22150%22%20fill%3D%22%232B68DE%22%20opacity%3D%220.28%22/%3E%0A%3Ccircle%20cx%3D%22410%22%20cy%3D%22150%22%20r%3D%22130%22%20fill%3D%22%23C7303F%22%20opacity%3D%220.22%22/%3E%0A%3Crect%20x%3D%22104%22%20y%3D%22104%22%20width%3D%22304%22%20height%3D%22304%22%20rx%3D%2284%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C73%2C90%2C0.45%29%22%20stroke-width%3D%2214%22/%3E%0A%3Cpath%20d%3D%22M312%20196c-19-22-53-28-78-15-24%2013-30%2041-12%2059%2013%2013%2035%2016%2057%2019%2022%203%2044%206%2057%2019%2018%2018%2012%2046-12%2059-25%2013-59%207-78-15%22%20fill%3D%22none%22%20stroke%3D%22%23E2495A%22%20stroke-width%3D%2226%22%20stroke-linecap%3D%22round%22/%3E%0A%3Ccircle%20cx%3D%22256%22%20cy%3D%22126%22%20r%3D%2217%22%20fill%3D%22%23E2495A%22/%3E%0A%3C/svg%3E" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22%2306070C%22/%3E%0A%3Ccircle%20cx%3D%22128%22%20cy%3D%2296%22%20r%3D%22150%22%20fill%3D%22%232B68DE%22%20opacity%3D%220.28%22/%3E%0A%3Ccircle%20cx%3D%22410%22%20cy%3D%22150%22%20r%3D%22130%22%20fill%3D%22%23C7303F%22%20opacity%3D%220.22%22/%3E%0A%3Crect%20x%3D%22104%22%20y%3D%22104%22%20width%3D%22304%22%20height%3D%22304%22%20rx%3D%2284%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C73%2C90%2C0.45%29%22%20stroke-width%3D%2214%22/%3E%0A%3Cpath%20d%3D%22M312%20196c-19-22-53-28-78-15-24%2013-30%2041-12%2059%2013%2013%2035%2016%2057%2019%2022%203%2044%206%2057%2019%2018%2018%2012%2046-12%2059-25%2013-59%207-78-15%22%20fill%3D%22none%22%20stroke%3D%22%23E2495A%22%20stroke-width%3D%2226%22%20stroke-linecap%3D%22round%22/%3E%0A%3Ccircle%20cx%3D%22256%22%20cy%3D%22126%22%20r%3D%2217%22%20fill%3D%22%23E2495A%22/%3E%0A%3C/svg%3E" />
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-  html, body, #root { height: 100%; }
+  :root { color-scheme: dark; }
+  html, body { height: 100%; margin: 0; background: #06070C !important; }
   body {
-    margin: 0;
-    background: #06070C;
-    -webkit-font-smoothing: antialiased;
-    overscroll-behavior-y: none;
+    background: #06070C !important; color: #FFFFFF;
+    font-family: 'Jost','Inter',-apple-system,system-ui,sans-serif;
+    -webkit-font-smoothing: antialiased; overscroll-behavior-y: none;
   }
-  * { -webkit-tap-highlight-color: transparent; }
+  * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
   button { font: inherit; }
-  /* Respect notches when installed full-screen */
-  #root { padding-bottom: env(safe-area-inset-bottom); }
+  #root { min-height: 100%; background: #06070C; color: #FFFFFF; padding-bottom: env(safe-area-inset-bottom); }
+  #err { display:none; position:fixed; inset:0; margin:0; padding:20px;
+    background:#0A0A0B; color:#FF8A94; font:12px/1.5 ui-monospace,Menlo,monospace;
+    white-space:pre-wrap; overflow:auto; z-index:9999; }
 </style>
-
-<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
 <div id="root"></div>
-
-<script type="text/babel" data-presets="react">
-const { useState } = React;
-
-
-// --- Inline icon set (replaces lucide-react so the app needs no bundler) ---
-function Svg({ size = 16, color = "currentColor", children, style }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      style={style}
-      aria-hidden="true"
-    >
-      {children}
-    </svg>
-  );
-}
-const X = (p) => (
-  <Svg {...p}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></Svg>
-);
-const Tag = (p) => (
-  <Svg {...p}>
-    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-  </Svg>
-);
-const ExternalLink = (p) => (
-  <Svg {...p}>
-    <path d="M15 3h6v6" /><path d="M10 14 21 3" />
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-  </Svg>
-);
-const Flame = (p) => (
-  <Svg {...p}>
-    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
-  </Svg>
-);
-
-
-
-const FONT_IMPORT = `
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
-`;
-
+<pre id="err"></pre>
+<script>
+window.onerror = function (msg, src, line, col, e) {
+  var el = document.getElementById('err');
+  el.style.display = 'block';
+  el.textContent = "Error: " + msg + "\nline " + line + ":" + col + (e && e.stack ? "\n\n" + e.stack : "");
+  return false;
+};
+</script>
+<script>
 const CATEGORIES = [
   // ============ WOMEN'S ============
   {
@@ -4974,470 +4931,291 @@ function productLink(item) {
 }
 
 
-// Minimal monogram: a hanger hook resolving into an "S" — thin stroke, geometric,
-// legible at 28px. Reads as a mark rather than an illustration.
-function LogoMark({ size = 30 }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 32 32"
-      fill="none"
-      aria-hidden="true"
-      style={{ flexShrink: 0, display: "block" }}
-    >
-      <rect
-        x="0.75"
-        y="0.75"
-        width="30.5"
-        height="30.5"
-        rx="8.5"
-        stroke="rgba(226,73,90,0.45)"
-        strokeWidth="1.5"
-      />
-      <path
-        d="M20.5 11.4c-1.3-1.5-3.6-1.9-5.3-1-1.6.9-2 2.8-.8 4 .9.9 2.4 1.1 3.9 1.3 1.5.2 3 .4 3.9 1.3 1.2 1.2.8 3.1-.8 4-1.7.9-4 .5-5.3-1"
-        stroke="#E2495A"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-      />
-      <circle cx="16" cy="6.6" r="1.15" fill="#E2495A" />
-    </svg>
-  );
+/* ---------------- Simple Style — dependency-free UI ---------------- */
+
+var C = {
+  ink: "#06070C", white: "#FFFFFF", blue: "#5B9DFF", red: "#E2495A",
+  redDeep: "#C7303F", redSoft: "#FF6B78", redPale: "#FF8A94",
+  t2: "#A8B2C6", t3: "#93A0B8", t4: "#8290A8", t5: "#6E7C96",
+  line: "rgba(255,255,255,0.09)", border: "rgba(255,255,255,0.14)",
+  glass: "rgba(255,255,255,0.05)"
+};
+var MONO = "'IBM Plex Mono',ui-monospace,Menlo,monospace";
+var SERIF = "'Bodoni Moda','Didot',Georgia,serif";
+var SANS = "'Jost','Inter',-apple-system,system-ui,sans-serif";
+var TITLE = "'Aptos','Aptos Display','Segoe UI Variable Display','Segoe UI',Jost,sans-serif";
+
+var state = { section: "women", cat: null, outfit: 0 };
+
+function el(tag, style, text) {
+  var n = document.createElement(tag);
+  if (style) for (var k in style) n.style[k] = style[k];
+  if (text != null) n.textContent = text;
+  return n;
 }
 
-const mono = "'IBM Plex Mono', monospace";
-const serif = "'Bodoni Moda', 'Didot', Georgia, serif";
-// Aptos ships with Microsoft 365 / Windows 11 rather than Google Fonts, so it
-// can't be web-loaded. Falls back to the nearest humanist grotesques.
-const titleFace =
-  "'Aptos', 'Aptos Display', 'Segoe UI Variable Display', 'Segoe UI', 'Inter', sans-serif";
-// Category tiles use the body face, tracked and uppercased — a display serif at
-// tile size reads as decoration rather than navigation.
-const ziglets = "'Jost', sans-serif";
-const sans = "'Jost', 'Inter', sans-serif";
-
-function pieceColor(piece, palette) {
-  switch (piece) {
-    case "Top":
-    case "Dress":
-      return palette.top;
-    case "Bottom":
-      return palette.bottom;
-    case "Shoes":
-      return palette.shoe;
-    case "Bag":
-      return palette.bag;
-    case "Jewellery":
-      return "#C9A876";
-    default:
-      return palette.bag;
-  }
+function logoSVG(size) {
+  var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  s.setAttribute("viewBox", "0 0 32 32");
+  s.setAttribute("width", size); s.setAttribute("height", size);
+  s.style.flexShrink = "0"; s.style.display = "block";
+  s.innerHTML =
+    '<rect x="0.75" y="0.75" width="30.5" height="30.5" rx="8.5" fill="none" stroke="rgba(226,73,90,0.45)" stroke-width="1.5"/>' +
+    '<path d="M20.5 11.4c-1.3-1.5-3.6-1.9-5.3-1-1.6.9-2 2.8-.8 4 .9.9 2.4 1.1 3.9 1.3 1.5.2 3 .4 3.9 1.3 1.2 1.2.8 3.1-.8 4-1.7.9-4 .5-5.3-1" fill="none" stroke="#E2495A" stroke-width="1.7" stroke-linecap="round"/>' +
+    '<circle cx="16" cy="6.6" r="1.15" fill="#E2495A"/>';
+  return s;
 }
 
-function ItemIcon({ piece, color }) {
-  let glyph;
-  switch (piece) {
-    case "Top":
-      glyph = (
-        <path d="M14 6 L8 12 L11 17 L15 14 L15 34 L29 34 L29 14 L33 17 L36 12 L30 6 L26 3 L18 3 Z" fill={color} />
-      );
-      break;
-    case "Dress":
-      glyph = (
-        <path d="M16 4 L12 10 L9 34 L31 34 L28 10 L24 4 L21 2 L19 2 Z" fill={color} />
-      );
-      break;
-    case "Bottom":
-      glyph = (
-        <path d="M13 4 L11 34 L18 34 L20 16 L21 16 L23 34 L30 34 L28 4 Z" fill={color} />
-      );
-      break;
-    case "Shoes":
-      glyph = (
-        <path d="M8 26 Q8 20 14 20 L22 20 L30 24 Q34 25 34 29 L34 31 L8 31 Z" fill={color} />
-      );
-      break;
-    case "Bag":
-      glyph = (
-        <>
-          <rect x="9" y="15" width="22" height="18" rx="3" fill={color} />
-          <path d="M14 15 L14 10 Q20 4 26 10 L26 15" fill="none" stroke={color} strokeWidth="2.5" />
-        </>
-      );
-      break;
-    case "Jewellery":
-      glyph = (
-        <>
-          <path d="M10 8 Q20 20 30 8" fill="none" stroke={color} strokeWidth="2.5" />
-          <circle cx="20" cy="24" r="6" fill="none" stroke={color} strokeWidth="2.5" />
-          <circle cx="20" cy="24" r="2" fill={color} />
-        </>
-      );
-      break;
-    default:
-      glyph = (
-        <>
-          <circle cx="13" cy="18" r="6" fill="none" stroke={color} strokeWidth="3" />
-          <circle cx="27" cy="18" r="6" fill="none" stroke={color} strokeWidth="3" />
-          <path d="M19 18 L21 18" stroke={color} strokeWidth="3" />
-        </>
-      );
-  }
-  return (
-    <svg viewBox="0 0 40 40" style={{ width: "100%", height: "100%" }}>
-      {glyph}
-    </svg>
-  );
+function glass(node, blur, bg) {
+  node.style.background = bg || C.glass;
+  node.style.backdropFilter = "blur(" + blur + "px) saturate(150%)";
+  node.style.webkitBackdropFilter = "blur(" + blur + "px) saturate(150%)";
+  node.style.border = "1px solid " + C.border;
+  return node;
 }
 
-function OutfitLookbook() {
-  const [section, setSection] = useState("women");
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [outfitIndex, setOutfitIndex] = useState(0);
+function render() {
+  var root = document.getElementById("root");
+  root.innerHTML = "";
 
-  const visibleCategories = CATEGORIES.filter((c) => c.section === section);
-  const currentOutfit = selectedCategory ? selectedCategory.outfits[outfitIndex] : null;
-  const total = currentOutfit ? currentOutfit.items.reduce((sum, i) => sum + i.price, 0) : 0;
-
-  const openCategory = (cat) => {
-    setSelectedCategory(cat);
-    setOutfitIndex(0);
-  };
-
-  const tabStyle = (isActive) => ({
-    flex: 1,
-    padding: "10px 0",
-    fontFamily: mono,
-    fontSize: 10,
-    letterSpacing: "0.16em",
-    textTransform: "uppercase",
-    textAlign: "center",
-    borderRadius: 999,
-    background: isActive ? "#FFFFFF" : "transparent",
-    color: isActive ? "#06070C" : "#93A0B8",
-    border: isActive ? "1px solid #F2F0F5" : "1px solid #2B2937",
-    cursor: "pointer",
-    transition: "background 140ms ease, color 140ms ease, border-color 140ms ease",
+  var glow = el("div", {
+    position: "fixed", inset: "0", pointerEvents: "none",
+    background:
+      "radial-gradient(680px circle at 12% 4%, rgba(43,104,222,0.30), transparent 62%)," +
+      "radial-gradient(560px circle at 92% 26%, rgba(199,48,63,0.22), transparent 60%)," +
+      "radial-gradient(720px circle at 50% 108%, rgba(43,104,222,0.16), transparent 65%)"
   });
+  root.appendChild(glow);
 
-  return (
-    <div
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        background: "#06070C",
-        color: "#FFFFFF",
-        fontFamily: sans,
-        position: "relative",
-        overflowX: "hidden",
-      }}
-    >
-      <style>{FONT_IMPORT}</style>
+  var page = el("div", { position: "relative", maxWidth: "760px", margin: "0 auto" });
+  root.appendChild(page);
 
-      {/* Ambient light behind the glass — blue from one side, red from the other */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "fixed",
-          inset: 0,
-          pointerEvents: "none",
-          background:
-            "radial-gradient(680px circle at 12% 4%, rgba(43,104,222,0.30), transparent 62%)," +
-            "radial-gradient(560px circle at 92% 26%, rgba(199,48,63,0.22), transparent 60%)," +
-            "radial-gradient(720px circle at 50% 108%, rgba(43,104,222,0.16), transparent 65%)",
-        }}
-      />
+  /* header */
+  var header = el("div", { padding: "44px 20px 0" });
+  var eyebrow = el("p", {
+    fontFamily: MONO, fontSize: "10px", letterSpacing: "0.3em",
+    textTransform: "uppercase", color: C.blue, margin: "0"
+  }, "Autumn / Winter");
+  header.appendChild(eyebrow);
 
-      <header style={{ padding: "44px 20px 0", maxWidth: 760, margin: "0 auto", position: "relative" }}>
-        <p style={{ fontFamily: mono, fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "#5B9DFF", margin: 0 }}>
-          Autumn / Winter
-        </p>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 14 }}>
-          <LogoMark size={30} />
-          <h1
-            style={{
-              fontFamily: titleFace,
-              fontSize: 40,
-              lineHeight: 1,
-              margin: 0,
-              fontWeight: 600,
-              letterSpacing: "-0.025em",
-            }}
-          >
-            Simple Style
-          </h1>
-        </div>
-        <p style={{ marginTop: 12, fontSize: 14.5, lineHeight: 1.6, letterSpacing: "0.005em", color: "#A8B2C6", marginBottom: 26, maxWidth: 400, fontWeight: 300 }}>
-          Ten directions, each with thirteen ways to wear it. Pick a look to see every piece.
-        </p>
+  var lock = el("div", { display: "flex", alignItems: "center", gap: "12px", marginTop: "14px" });
+  lock.appendChild(logoSVG(30));
+  var h1 = el("h1", {
+    fontFamily: TITLE, fontSize: "40px", lineHeight: "1", margin: "0",
+    fontWeight: "600", letterSpacing: "-0.025em", color: C.white
+  }, "Simple Style");
+  lock.appendChild(h1);
+  header.appendChild(lock);
 
-        <div style={{ display: "flex", gap: 8, maxWidth: 420 }}>
-          <button style={tabStyle(section === "women")} onClick={() => setSection("women")}>
-            Women's
-          </button>
-          <button style={tabStyle(section === "men")} onClick={() => setSection("men")}>
-            Men's
-          </button>
-          <button style={tabStyle(section === "unisex")} onClick={() => setSection("unisex")}>
-            Unisex
-          </button>
-        </div>
-      </header>
+  var sub = el("p", {
+    marginTop: "12px", fontSize: "14.5px", lineHeight: "1.6", color: C.t2,
+    marginBottom: "26px", maxWidth: "400px", fontWeight: "300"
+  }, "Ten directions, each with thirteen ways to wear it. Pick a look to see every piece.");
+  header.appendChild(sub);
 
-      <main
-        style={{
-          padding: "28px 20px 48px",
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
-          gap: 8,
-          maxWidth: 760,
-          margin: "0 auto",
-          position: "relative",
-        }}
-      >
-        {visibleCategories.map((cat, i) => (
-          <button
-            key={cat.id}
-            onClick={() => openCategory(cat)}
-            style={{
-              textAlign: "left",
-              borderRadius: 6,
-              overflow: "hidden",
-              background:
-                "linear-gradient(158deg, rgba(70,120,220,0.20) 0%, rgba(255,255,255,0.05) 55%, rgba(199,48,63,0.10) 100%)",
-              backdropFilter: "blur(14px) saturate(150%)",
-              WebkitBackdropFilter: "blur(14px) saturate(150%)",
-              border: "1px solid rgba(255,255,255,0.16)",
-              boxShadow:
-                "inset 0 1px 0 rgba(255,255,255,0.22), 0 6px 22px rgba(0,0,0,0.42)",
-              cursor: "pointer",
-              padding: "20px 16px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              justifyContent: "flex-end",
-              minHeight: 104,
-              transition: "border-color 160ms ease, transform 160ms ease",
-            }}
-          >
-            <h3
-              style={{
-                fontFamily: ziglets,
-                fontSize: 13,
-                lineHeight: 1.3,
-                margin: 0,
-                fontWeight: 500,
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                textAlign: "left",
-                color: "#FFFFFF",
-              }}
-            >
-              {cat.name}
-            </h3>
-            <span
-              style={{
-                fontFamily: mono,
-                fontSize: 9,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                color: "#5B9DFF",
-                marginTop: 6,
-              }}
-            >
-              {cat.outfits.length} looks
-            </span>
-          </button>
-        ))}
-      </main>
+  var tabs = el("div", { display: "flex", gap: "8px", maxWidth: "420px" });
+  [["women", "Women's"], ["men", "Men's"], ["unisex", "Unisex"]].forEach(function (t) {
+    var active = state.section === t[0];
+    var b = el("button", {
+      flex: "1", padding: "9px 0", fontFamily: MONO, fontSize: "10px",
+      letterSpacing: "0.16em", textTransform: "uppercase", textAlign: "center",
+      borderRadius: "999px", cursor: "pointer",
+      background: active ? C.white : C.glass,
+      color: active ? C.ink : C.t3,
+      border: "1px solid " + (active ? C.white : C.border),
+      backdropFilter: "blur(12px)", webkitBackdropFilter: "blur(12px)"
+    }, t[1]);
+    b.onclick = function () { state.section = t[0]; render(); };
+    tabs.appendChild(b);
+  });
+  header.appendChild(tabs);
+  page.appendChild(header);
 
-      {selectedCategory && currentOutfit && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 50,
-            display: "flex",
-            alignItems: "flex-end",
-            justifyContent: "center",
-            background: "rgba(3,5,10,0.62)",
-            backdropFilter: "blur(6px)",
-            WebkitBackdropFilter: "blur(6px)",
-          }}
-          onClick={() => setSelectedCategory(null)}
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              width: "100%",
-              maxWidth: 480,
-              background: "rgba(14,18,32,0.72)",
-              backdropFilter: "blur(26px) saturate(160%)",
-              WebkitBackdropFilter: "blur(26px) saturate(160%)",
-              border: "1px solid rgba(255,255,255,0.14)",
-              boxShadow: "inset 0 1px 0 rgba(255,255,255,0.18), 0 -12px 44px rgba(0,0,0,0.6)",
-              maxHeight: "90vh",
-              borderTopLeftRadius: 14,
-              borderTopRightRadius: 14,
-              overflow: "hidden",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <div style={{ display: "flex", background: "rgba(20,26,44,0.75)", color: "#F2EFE8" }}>
-              <div style={{ flex: 1, padding: "18px 16px 16px 16px", display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
-                <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
-                    <Tag size={13} color="#C9A876" />
-                    <span style={{ fontFamily: mono, fontSize: 10, letterSpacing: "0.25em", color: "#C9A876" }}>
-                      {selectedCategory.section === "women" ? "WOMEN'S" : selectedCategory.section === "men" ? "MEN'S" : "UNISEX"}
-                    </span>
-                  </div>
-                  <h2 style={{ fontFamily: serif, fontSize: 26, margin: 0, fontWeight: 600, letterSpacing: "-0.01em" }}>{selectedCategory.name}</h2>
-                  <p style={{ fontSize: 12, marginTop: 4, color: "#A8B2C6" }}>{currentOutfit.label}</p>
-                </div>
-                <button
-                  onClick={() => setSelectedCategory(null)}
-                  aria-label="Close"
-                  style={{ padding: 6, borderRadius: 999, background: "rgba(247,245,241,0.1)", border: "none", cursor: "pointer", color: "#F7F5F1", flexShrink: 0 }}
-                >
-                  <X size={16} />
-                </button>
-              </div>
-            </div>
+  /* grid */
+  var grid = el("div", {
+    padding: "28px 20px 48px", display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)", gap: "8px"
+  });
+  CATEGORIES.filter(function (c) { return c.section === state.section; })
+    .forEach(function (cat) {
+      var tile = el("button", {
+        textAlign: "left", borderRadius: "6px", overflow: "hidden", cursor: "pointer",
+        padding: "20px 16px", display: "flex", flexDirection: "column",
+        alignItems: "flex-start", justifyContent: "flex-end", minHeight: "104px",
+        background: "linear-gradient(158deg, rgba(70,120,220,0.20) 0%, rgba(255,255,255,0.05) 55%, rgba(199,48,63,0.10) 100%)",
+        backdropFilter: "blur(14px) saturate(150%)", webkitBackdropFilter: "blur(14px) saturate(150%)",
+        border: "1px solid rgba(255,255,255,0.16)",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.22), 0 6px 22px rgba(0,0,0,0.42)"
+      });
+      var name = el("h3", {
+        fontFamily: SANS, fontSize: "13px", lineHeight: "1.3", margin: "0",
+        fontWeight: "500", letterSpacing: "0.18em", textTransform: "uppercase",
+        color: C.white
+      }, cat.name);
+      var count = el("span", {
+        fontFamily: MONO, fontSize: "9px", letterSpacing: "0.12em",
+        textTransform: "uppercase", color: C.blue, marginTop: "6px"
+      }, cat.outfits.length + " looks");
+      tile.appendChild(name); tile.appendChild(count);
+      tile.onclick = function () { state.cat = cat; state.outfit = 0; render(); };
+      grid.appendChild(tile);
+    });
+  page.appendChild(grid);
 
-            {/* outfit variant switcher */}
-            <div
-              style={{
-                display: "flex",
-                gap: 6,
-                padding: "12px 16px 8px",
-                overflowX: "auto",
-                WebkitOverflowScrolling: "touch",
-              }}
-            >
-              {selectedCategory.outfits.map((o, idx) => (
-                <button
-                  key={o.label}
-                  onClick={() => setOutfitIndex(idx)}
-                  style={{
-                    flexShrink: 0,
-                    whiteSpace: "nowrap",
-                    padding: "8px 12px",
-                    fontFamily: mono,
-                    fontSize: 10,
-                    letterSpacing: "0.05em",
-                    textAlign: "center",
-                    borderRadius: 3,
-                    border: idx === outfitIndex ? "1px solid #C4785A" : "1px solid #302C28",
-                    background: idx === outfitIndex ? "#C7303F" : "rgba(255,255,255,0.06)",
-                    backdropFilter: "blur(10px)",
-                    WebkitBackdropFilter: "blur(10px)",
-                    color: idx === outfitIndex ? "#F7F5F1" : "#9A948A",
-                    cursor: "pointer",
-                  }}
-                >
-                  {o.label}
-                </button>
-              ))}
-            </div>
-            <p
-              style={{
-                fontFamily: mono,
-                fontSize: 9,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                color: "#6E7C96",
-                margin: "0 16px 4px",
-              }}
-            >
-              {outfitIndex + 1} / {selectedCategory.outfits.length} · swipe for more
-            </p>
-
-
-            <div style={{ padding: "16px 24px 20px", overflowY: "auto" }}>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12, gap: 8 }}>
-                <p style={{ fontFamily: mono, fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: "#6E7C96", margin: 0 }}>
-                  Itemized
-                </p>
-              </div>
-              <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-                {currentOutfit.items.map((item, idx) => {
-                  const href = productLink(item);
-                  return (
-                  <li key={idx} style={{ borderTop: idx === 0 ? "none" : "1px solid #2A2724", padding: "12px 0" }}>
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 12,
-                        textDecoration: "none",
-                        color: "inherit",
-                      }}
-                    >
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <p style={{ fontFamily: mono, fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase", color: "#FF6B78", margin: 0 }}>
-                          {item.piece}
-                        </p>
-                        <p style={{ fontSize: 14, marginTop: 3, fontWeight: 500, letterSpacing: "0.005em", display: "flex", alignItems: "center", gap: 5 }}>
-                          {item.product}
-                          <ExternalLink size={11} color="#6E7C96" style={{ flexShrink: 0 }} />
-                        </p>
-                        <p style={{ fontSize: 12, color: "#8290A8", margin: 0, display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-                          {item.brand}
-                          {item.popular && (
-                            <span
-                              style={{
-                                display: "inline-flex",
-                                alignItems: "center",
-                                gap: 3,
-                                fontFamily: mono,
-                                fontSize: 9,
-                                letterSpacing: "0.08em",
-                                textTransform: "uppercase",
-                                color: "#FF8A94",
-                                background: "rgba(199,48,63,0.18)",
-                                border: "1px solid rgba(226,73,90,0.42)",
-                                backdropFilter: "blur(8px)",
-                                WebkitBackdropFilter: "blur(8px)",
-                                borderRadius: 3,
-                                padding: "1px 5px",
-                              }}
-                            >
-                              <Flame size={9} color="#FF8A94" />
-                              Popular
-                            </span>
-                          )}
-                        </p>
-                      </div>
-                      <p style={{ fontFamily: mono, fontSize: 13, whiteSpace: "nowrap", margin: 0, flexShrink: 0, fontVariantNumeric: "tabular-nums", color: "#FFFFFF" }}>
-                        {`£${item.price}`}
-                      </p>
-                    </a>
-
-                  </li>
-                  );
-                })}
-              </ul>
-            </div>
-
-            <div style={{ padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", borderTop: "1px solid #2A2724", background: "rgba(255,255,255,0.045)" }}>
-              <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", color: "#A8B2C6" }}>Total</span>
-              <span style={{ fontFamily: serif, fontSize: 21, color: "#5B9DFF", fontWeight: 600, letterSpacing: "-0.01em" }}>£{total}</span>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+  if (state.cat) root.appendChild(panel());
 }
 
+function panel() {
+  var cat = state.cat, outfit = cat.outfits[state.outfit];
+  var total = outfit.items.reduce(function (s, i) { return s + i.price; }, 0);
 
-ReactDOM.createRoot(document.getElementById("root")).render(<OutfitLookbook />);
+  var overlay = el("div", {
+    position: "fixed", inset: "0", zIndex: "50", display: "flex",
+    alignItems: "flex-end", justifyContent: "center",
+    background: "rgba(3,5,10,0.62)", backdropFilter: "blur(6px)", webkitBackdropFilter: "blur(6px)"
+  });
+  overlay.onclick = function () { state.cat = null; render(); };
+
+  var sheet = el("div", {
+    width: "100%", maxWidth: "480px", maxHeight: "90vh",
+    borderTopLeftRadius: "14px", borderTopRightRadius: "14px", overflow: "hidden",
+    display: "flex", flexDirection: "column",
+    background: "rgba(14,18,32,0.72)",
+    backdropFilter: "blur(26px) saturate(160%)", webkitBackdropFilter: "blur(26px) saturate(160%)",
+    border: "1px solid rgba(255,255,255,0.14)",
+    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.18), 0 -12px 44px rgba(0,0,0,0.6)"
+  });
+  sheet.onclick = function (e) { e.stopPropagation(); };
+
+  /* head */
+  var head = el("div", {
+    display: "flex", alignItems: "flex-start", justifyContent: "space-between",
+    padding: "18px 16px", color: C.white,
+    background: "linear-gradient(135deg, rgba(43,104,222,0.26), rgba(199,48,63,0.16))",
+    backdropFilter: "blur(18px) saturate(150%)", webkitBackdropFilter: "blur(18px) saturate(150%)",
+    borderBottom: "1px solid rgba(255,255,255,0.12)"
+  });
+  var hl = el("div");
+  var lbl = el("p", {
+    fontFamily: MONO, fontSize: "10px", letterSpacing: "0.25em",
+    color: C.blue, margin: "0 0 4px"
+  }, cat.section === "women" ? "WOMEN'S" : cat.section === "men" ? "MEN'S" : "UNISEX");
+  var h2 = el("h2", {
+    fontFamily: SERIF, fontSize: "26px", margin: "0", fontWeight: "600",
+    letterSpacing: "-0.01em", color: C.white
+  }, cat.name);
+  var lab = el("p", { fontSize: "12px", marginTop: "4px", color: C.t2, margin: "4px 0 0" }, outfit.label);
+  hl.appendChild(lbl); hl.appendChild(h2); hl.appendChild(lab);
+  var close = el("button", {
+    padding: "6px 10px", borderRadius: "999px", background: "rgba(255,255,255,0.12)",
+    border: "none", cursor: "pointer", color: C.white, fontSize: "15px", flexShrink: "0"
+  }, "✕");
+  close.onclick = function () { state.cat = null; render(); };
+  head.appendChild(hl); head.appendChild(close);
+  sheet.appendChild(head);
+
+  /* variant chips */
+  var chips = el("div", {
+    display: "flex", gap: "6px", padding: "12px 16px 8px",
+    overflowX: "auto", webkitOverflowScrolling: "touch"
+  });
+  cat.outfits.forEach(function (o, i) {
+    var on = i === state.outfit;
+    var c = el("button", {
+      flexShrink: "0", whiteSpace: "nowrap", padding: "8px 12px", fontFamily: MONO,
+      fontSize: "10px", letterSpacing: "0.05em", borderRadius: "999px", cursor: "pointer",
+      background: on ? C.redDeep : "rgba(255,255,255,0.06)",
+      color: on ? C.white : C.t2,
+      border: "1px solid " + (on ? C.red : C.border),
+      backdropFilter: "blur(10px)", webkitBackdropFilter: "blur(10px)"
+    }, o.label);
+    c.onclick = function () { state.outfit = i; render(); };
+    chips.appendChild(c);
+  });
+  sheet.appendChild(chips);
+
+  var counter = el("p", {
+    fontFamily: MONO, fontSize: "9px", letterSpacing: "0.1em", textTransform: "uppercase",
+    color: C.t5, margin: "0 16px 4px"
+  }, (state.outfit + 1) + " / " + cat.outfits.length + " · swipe for more");
+  sheet.appendChild(counter);
+
+  /* items */
+  var list = el("div", { padding: "16px 20px 20px", overflowY: "auto" });
+  var itemsLbl = el("p", {
+    fontFamily: MONO, fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase",
+    color: C.t5, margin: "0 0 12px"
+  }, "Itemized");
+  list.appendChild(itemsLbl);
+
+  outfit.items.forEach(function (item, idx) {
+    var row = el("a", {
+      display: "flex", alignItems: "center", gap: "12px", padding: "12px 0",
+      textDecoration: "none", color: "inherit",
+      borderTop: idx === 0 ? "none" : "1px solid " + C.line
+    });
+    row.href = productLink(item);
+    row.target = "_blank"; row.rel = "noopener noreferrer";
+
+    var mid = el("div", { flex: "1", minWidth: "0" });
+    mid.appendChild(el("p", {
+      fontFamily: MONO, fontSize: "10px", letterSpacing: "0.15em",
+      textTransform: "uppercase", color: C.redSoft, margin: "0"
+    }, item.piece));
+    mid.appendChild(el("p", {
+      fontSize: "14px", margin: "3px 0 0", fontWeight: "500",
+      letterSpacing: "0.005em", color: C.white
+    }, item.product));
+
+    var brandRow = el("p", {
+      fontSize: "12px", color: C.t4, margin: "0",
+      display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap"
+    });
+    brandRow.appendChild(document.createTextNode(item.brand));
+    if (item.popular) {
+      var pop = el("span", {
+        display: "inline-flex", alignItems: "center", gap: "3px", fontFamily: MONO,
+        fontSize: "9px", letterSpacing: "0.08em", textTransform: "uppercase",
+        color: C.redPale, background: "rgba(199,48,63,0.18)",
+        border: "1px solid rgba(226,73,90,0.42)", borderRadius: "3px", padding: "1px 5px"
+      }, "Popular");
+      brandRow.appendChild(pop);
+    }
+    mid.appendChild(brandRow);
+
+    var price = el("p", {
+      fontFamily: MONO, fontSize: "13px", whiteSpace: "nowrap", margin: "0",
+      flexShrink: "0", fontVariantNumeric: "tabular-nums", color: C.white
+    }, "£" + item.price);
+
+    row.appendChild(mid); row.appendChild(price);
+    list.appendChild(row);
+  });
+  sheet.appendChild(list);
+
+  /* total */
+  var foot = el("div", {
+    padding: "16px 20px", display: "flex", alignItems: "center",
+    justifyContent: "space-between", borderTop: "1px solid rgba(255,255,255,0.12)",
+    background: "rgba(255,255,255,0.05)",
+    backdropFilter: "blur(18px)", webkitBackdropFilter: "blur(18px)"
+  });
+  foot.appendChild(el("span", {
+    fontFamily: MONO, fontSize: "12px", letterSpacing: "0.15em",
+    textTransform: "uppercase", color: C.t2
+  }, "Total"));
+  foot.appendChild(el("span", {
+    fontFamily: SERIF, fontSize: "21px", color: C.blue, fontWeight: "600",
+    letterSpacing: "-0.01em"
+  }, "£" + total));
+  sheet.appendChild(foot);
+
+  overlay.appendChild(sheet);
+  return overlay;
+}
+
+render();
+
 </script>
 </body>
 </html>
